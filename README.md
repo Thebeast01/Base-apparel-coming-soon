@@ -20,8 +20,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Thebeast01/Base-apparel-coming-soon.git]
+- Live Site URL: [https://thebeast01.github.io/Base-apparel-coming-soon/]
 
 ### What I learned
 
