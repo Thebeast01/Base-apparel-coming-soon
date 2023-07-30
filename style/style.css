@@ -135,7 +135,7 @@ body {
 
 /* Responsive design code  */
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .main {
     display: flex;
     flex-direction: column;
