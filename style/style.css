@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: 'Josefin Sans';
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  font-size: 16px;
+}
+.hidden {
+  display: none;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: fit-content;
+  margin-left: 4.5vw;
+  margin-right: 4.5vw;
+}
+.left-box {
+  width: 58%;
+  height: 100vh;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+.left-box #logo {
+  margin-left: 10vw;
+  margin-top: 3.5rem;
+}
+.left-box #logo img {
+  width: 8.5rem;
+  height: 1.8rem;
+}
+.left-box h1 {
+  color: hsl(0, 36%, 70%);
+  margin-left: 10vw;
+  margin-top: 8rem;
+  font-size: 4vw;
+  font-weight: 300;
+  letter-spacing: 1.5vw;
+  text-transform: uppercase;
+}
+.left-box h2 {
+  color: hsl(0, 6%, 24%);
+  margin-left: 10vw;
+  font-size: 4vw;
+  font-weight: 600;
+  letter-spacing: 12px;
+  line-height: 5vw;
+  text-transform: uppercase;
+  width: 50%;
+}
+.left-box .content-text {
+  color: hsl(0, 36%, 70%);
+  margin-left: 10vw;
+  margin-top: 1.4rem;
+  line-height: 1.8vw;
+  width: 60%;
+  font-weight: 600;
+  font-size: 1vw;
+}
+.left-box .email-input {
+  margin-left: 10vw;
+  margin-top: 1.5rem;
+  width: 70%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+.left-box .email-input .error {
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  z-index: 1;
+  right: 5rem;
+  position: relative;
+}
+.left-box .email-input input {
+  width: 70%;
+  height: 3rem;
+  border: 1px solid hsl(0, 36%, 70%);
+  outline: none;
+  border-radius: 2rem;
+  padding-left: 1.5rem;
+  color: hsl(0, 36%, 70%);
+  font-weight: 400;
+}
+.left-box .email-input input::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+.left-box .btn {
+  width: 6rem;
+  height: 3.13rem;
+  border-radius: 2rem;
+  margin-left: -4rem;
+  border: 1px solid hsl(0, 36%, 70%);
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+.left-box .btn:hover {
+  cursor: pointer;
+  background: hsl(0, 36%, 70%);
+  box-shadow: 0.5rem 0.5rem 3rem hsl(0, 36%, 70%);
+  z-index: 1;
+}
+.left-box .email-input input:focus {
+  border: 2px solid red;
+}
+.right-box {
+  background-image: url(/images/hero-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40%;
+  height: 100vh;
+}
+.left-box .error-text {
+  color: hsl(0, 93%, 68%);
+  margin-left: 12vw;
+  margin-top: 1.2rem;
+  font-size: 13px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsive design code  */
+
+@media (max-width: 375px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .left-box {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .left-box #logo {
+    margin-left: 5vw;
+    margin-top: -2.5rem;
+  }
+  .left-box #logo img {
+    width: 6rem;
+    height: 1.5rem;
+  }
+  .mobile-design-layout {
+    background: url(/images/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40%;
+    width: 100vw;
+    margin-top: 1rem;
+  }
+  .left-box h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0 1rem;
+  }
+  .left-box h2 {
+    text-align: center;
+    /* align-self: center; */
+    font-size: 2rem;
+    line-height: 2rem;
+    width: fit-content;
+    margin: 0 1rem;
+  }
+  .left-box .content-text {
+    text-align: center;
+    /* align-self: center; */
+    margin: 0 1rem;
+    line-height: 1rem;
+    font-size: 14px;
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+  .right-box {
+    display: none;
+  }
+  .left-box .email-input {
+    width: 90%;
+    margin-left: 6vw;
+  }
+  .left-box .email-input input {
+    font-size: 12px;
+    width: 100%;
+    padding-left: 0.5rem;
+    margin-right: 3rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .left-box .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

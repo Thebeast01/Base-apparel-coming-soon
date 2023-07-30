@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="stylesheet" href="/style/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="left-box">
+        <div id="logo">
+          <img src="/images/logo.svg" alt="logo" />
+        </div>
+        <div class="mobile-design-layout"></div>
+        <h1>We're</h1>
+        <h2>coming soon</h2>
+        <p class="content-text">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <div class="email-input">
+          <input
+            type="email"
+            name="email"
+            id="Email"
+            value=""
+            placeholder="Email Address"
+          />
+          <img src="/images/icon-error.svg" alt="" class="hidden error" />
+
+          <button class="btn" onclick="emailValidation()">
+            <img src="/images/icon-arrow.svg" alt="" />
+          </button>
+        </div>
+        <div class="error-text hidden">
+          <span>Please provide a valid email</span>
+        </div>
+      </div>
+      <div class="right-box">
+        <!-- Contains A background Image only  -->
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Mohammad Saif</a>.
+      </p>
+    </footer>
+    <script src="/script/script.js"></script>
+  </body>
+</html>
