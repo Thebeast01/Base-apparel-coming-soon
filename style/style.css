@@ -112,7 +112,7 @@ body {
   border: 2px solid red;
 }
 .right-box {
-  background-image: url(/images/hero-desktop.jpg);
+  background-image: url(/Base-apparel-coming-soon/images/hero-desktop.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -157,7 +157,7 @@ body {
     height: 1.5rem;
   }
   .mobile-design-layout {
-    background: url(/images/hero-mobile.jpg);
+    background: url(/Base-apparel-coming-soon/images/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
